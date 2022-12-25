@@ -4,6 +4,14 @@ void main() {
   runApp(const MyApp());
 }
 
+class Clip {
+  final String data;
+  final String time;
+  final String source;
+
+  Clip(this.data, this.time, this.source);
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
