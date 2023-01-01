@@ -12,6 +12,18 @@ class Clip {
   Clip(this.data, this.time, this.source);
 }
 
+class ClipDetails extends StatelessWidget {
+  Clip clip;
+
+  ClipDetails(this.clip, {Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
+
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
