@@ -19,7 +19,15 @@ class ClipDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(clip.data),
+        Text(clip.time),
+        Text(clip.source),
+      ],
+    );
   }
 }
 
