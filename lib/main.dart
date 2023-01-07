@@ -4,34 +4,6 @@ void main() {
   runApp(const MyApp());
 }
 
-class Clip {
-  final String data;
-  final String time;
-  final String source;
-
-  Clip(this.data, this.time, this.source);
-}
-
-class ClipDetails extends StatelessWidget {
-  Clip clip;
-
-  ClipDetails(this.clip, {Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(clip.data),
-        Text(clip.time),
-        Text(clip.source),
-      ],
-    );
-  }
-}
-
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
