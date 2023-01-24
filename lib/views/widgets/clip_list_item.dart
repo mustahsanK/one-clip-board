@@ -11,9 +11,10 @@ class ClipListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Center(
-        child: Text(
-          truncate(clip.data),
-        ),
+        child: ListTile(
+          title: Text(clip.uid.toString()),
+          subtitle: Text(truncate(clip.data)),
+        )
       )
     );
   }
