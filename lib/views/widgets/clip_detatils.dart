@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:one_clip_board/model/clip.dart';
 
 class ClipDetails extends StatelessWidget {
-  final Clip clip;
+  final Clipping clip;
 
   const ClipDetails(this.clip, {Key? key}) : super(key: key);
 
@@ -21,6 +21,7 @@ class ClipDetails extends StatelessWidget {
           child: Column(
             children: [
               Text(clip.data),
+              const SizedBox(height: 10),
               Row(
                 children: [
                   Expanded(child: Text(clip.source)),
