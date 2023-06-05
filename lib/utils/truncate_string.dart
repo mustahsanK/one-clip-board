@@ -1,6 +1,6 @@
 String truncate(String s) {
-  if (s.length <= 10) {
+  if (s.length <= 75) {
     return s;
   }
-  return s.substring(0, 50);
+  return "${s.substring(0, 75)}.....";
 }

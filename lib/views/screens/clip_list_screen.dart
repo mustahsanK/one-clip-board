@@ -6,9 +6,8 @@ class ClipListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Clips')),
-      body: const ClipList(),
+    return const Scaffold(
+      body: ClipList(),
     );
   }
 }

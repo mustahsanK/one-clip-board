@@ -8,11 +8,11 @@ class ClipList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Clipping> sampleClips = const Sample().getSample();
+    List<Clipping> sampleClips = getSample();
     return ListView(
       children: [
         for (Clipping clip in sampleClips)
-          ClipListItem(clip)
+          ClipListItem(clip),
       ],
     );
   }

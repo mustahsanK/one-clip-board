@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:one_clip_board/theme.dart';
 import 'package:one_clip_board/views/screens/clip_list_screen.dart';
 
 void main() {
@@ -10,9 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Welcome to Flutter',
-      home: ClipListScreen(),
+      theme: appThemeData(),
+      home: const ClipListScreen(),
     );
   }
 }
