@@ -9,7 +9,7 @@ class ClipListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.fromLTRB(10, 0, 10, 5),
+      margin: const EdgeInsets.fromLTRB(0, 0, 10, 5),
       decoration: const BoxDecoration(
         border: Border(
           bottom: BorderSide(color: Colors.grey, width: 0.5),
