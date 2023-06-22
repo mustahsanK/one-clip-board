@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:one_clip_board/model/clip.dart';
+import 'package:one_clip_board/views/widgets/cat_icon.dart';
 
 class ClipListItem extends StatelessWidget {
   final Clipping clip;
@@ -9,6 +10,7 @@ class ClipListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 55,
       margin: const EdgeInsets.fromLTRB(0, 0, 10, 5),
       decoration: const BoxDecoration(
         border: Border(
@@ -16,7 +18,7 @@ class ClipListItem extends StatelessWidget {
         )
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(child: Text(clip.data, style: const TextStyle(fontSize: 12.8))),
@@ -28,6 +30,8 @@ class ClipListItem extends StatelessWidget {
               Text(clip.date, style: Theme.of(context).textTheme.bodySmall),
             ],
           ),
+          const SizedBox(width: 8),
+          CategoryIcon(clip.collection.sId, color: Colors.green),
         ],
       ),
     );
