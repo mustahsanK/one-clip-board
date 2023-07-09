@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:one_clip_board/model/clip.dart';
-import 'package:one_clip_board/views/widgets/cat_icon.dart';
 
-class ClipDetails extends StatelessWidget {
+import '../../model/clip.dart';
+import '../widgets/cat_icon.dart';
+
+class ClipDetailsScreen extends StatelessWidget {
   final Clipping clip;
 
-  const ClipDetails(this.clip, {Key? key}) : super(key: key);
+  const ClipDetailsScreen(this.clip, {super.key});
 
   @override
   Widget build(BuildContext context) {
